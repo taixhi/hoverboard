@@ -1,15 +1,15 @@
 {
   "basepath": "/",
   "url": "https://hoverboard-dev.firebaseapp.com/",
-  "analytics": "UA-43643469-8",
+  "analytics": "UA-93175931-3",
   "prefix": "/",
   "firebase": {
-    "apiKey": "AIzaSyBu9LI-hY4NfUOPJJKuV3BfQm7edLr2-aE",
-    "authDomain": "hoverboard-dev.firebaseapp.com",
-    "databaseURL": "https://hoverboard-dev.firebaseio.com",
-    "projectId": "hoverboard-dev",
-    "storageBucket": "hoverboard-dev.appspot.com",
-    "messagingSenderId": "1083195713896"
+    "apiKey": "AIzaSyBpQOnt9KcCSCSse8iu0bg8LUFxcdvhgL0",
+    "authDomain": "ideahacks-c7212.firebaseapp.com",
+    "databaseURL": "https://ideahacks-c7212.firebaseio.com",
+    "projectId": "ideahacks-c7212",
+    "storageBucket": "ideahacks-c7212.appspot.com",
+    "messagingSenderId": "1054749928993"
   },
   "googleMapApiKey": "AIzaSyDfXz3CKspnwTCsHDBD1mmjhj8d5xlm6og"
 }
