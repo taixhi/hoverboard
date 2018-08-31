@@ -1,0 +1,86 @@
+{
+	"arya_vohra": {
+		"badges": [{
+			"description": "Angular Google Developer Expert",
+			"link": "https://developers.google.com/experts/people/gerard-sans.html",
+			"name": "gde"
+		}],
+		"shortBio": "I enjoy html",
+		"photoUrl": "https://pbs.twimg.com/profile_images/1034746370609934336/ow5R_2Oo_400x400.jpg",
+		"name": "Arya Vohra",
+		"companyLogo": "/images/logos/gdg-lviv.svg",
+		"title": "Technical Evangelist",
+		"photo": "",
+		"order": 0,
+		"featured": true,
+		"company": "Playcast Inc.",
+		"companyLogoUrl": "https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/logos/gdg-lviv.svg",
+		"socials": [{
+			"icon": "twitter",
+			"link": "https://twitter.com/gerardsans",
+			"name": "Twitter"
+		}, {
+			"name": "Website",
+			"icon": "website",
+			"link": "https://medium.com/@gerard.sans"
+		}],
+		"country": "Delhi, India",
+		"bio": "I know HTML (How to meet ladies)"
+	},
+	"khush_jammu": {
+		"companyLogo": "/images/logos/gdg-lviv.svg",
+		"title": "Technical Evangelist",
+		"photo": "",
+		"order": 1,
+		"featured": true,
+		"company": "Database Pro",
+		"companyLogoUrl": "https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/logos/gdg-lviv.svg",
+		"socials": [{
+			"name": "Twitter",
+			"icon": "twitter",
+			"link": "https://twitter.com/gerardsans"
+		}, {
+			"icon": "website",
+			"link": "https://medium.com/@gerard.sans",
+			"name": "Website"
+		}],
+		"country": "London, United Kingdom",
+		"bio": "Angular Google Developer Expert. I am a Computer Science Engineer specialised in Web. International speaker and trainer. I am an Angular fanboy and a community activist fighting for the JavaScript revolution. I have lived and worked for all sorts of companies in Germany, Brazil, UK and Spain. I am always up for a good challenge. I enjoy running AngularLabs London, mentoring students, participating in the community, giving talks and writing technical articles at Medium.",
+		"badges": [{
+			"name": "gde",
+			"description": "Angular Google Developer Expert",
+			"link": "https://developers.google.com/experts/people/gerard-sans.html"
+		}],
+		"shortBio": "I am a hacker",
+		"photoUrl": "https://pbs.twimg.com/profile_images/1033581632416968704/hBT7gYDy_400x400.jpg",
+		"name": "Khush Jammu"
+	},
+	"taichi_kato": {
+		"badges": [{
+			"name": "gde",
+			"description": "AI Professional",
+			"link": "https://developers.google.com/experts/people/gerard-sans.html"
+		}],
+		"shortBio": "Angular Google Developer Expert. International speaker and trainer.  Enjoy running AngularLabs London.",
+		"photoUrl": "http://taichikato.com/taichi.jpg",
+		"name": "Taichi Kato",
+		"companyLogo": "/images/logos/gdg-lviv.svg",
+		"title": "Technical Evangelist",
+		"photo": "",
+		"order": 2,
+		"featured": true,
+		"company": "Questo AI",
+		"companyLogoUrl": "https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/logos/gdg-lviv.svg",
+		"socials": [{
+			"name": "Twitter",
+			"icon": "twitter",
+			"link": "https://twitter.com/gerardsans"
+		}, {
+			"icon": "website",
+			"link": "https://medium.com/@gerard.sans",
+			"name": "Website"
+		}],
+		"country": "London, United Kingdom",
+		"bio": "Angular Google Developer Expert. I am a Computer Science Engineer specialised in Web. International speaker and trainer. I am an Angular fanboy and a community activist fighting for the JavaScript revolution. I have lived and worked for all sorts of companies in Germany, Brazil, UK and Spain. I am always up for a good challenge. I enjoy running AngularLabs London, mentoring students, participating in the community, giving talks and writing technical articles at Medium."
+	}
+}
