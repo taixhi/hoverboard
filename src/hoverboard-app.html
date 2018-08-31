@@ -202,11 +202,6 @@
             data-route="home"
             data-path="pages/home-page.html"
           ></home-page>
-          <blog-page
-            data-route="blog"
-            data-path="pages/blog-page.html"
-            route="[[subroute]]"
-          ></blog-page>
           <schedule-page
             data-route="schedule"
             data-path="pages/schedule-page.html"
@@ -239,32 +234,12 @@
 
       </app-header-layout>
     </app-drawer-layout>
-
-    <video-dialog
-      opened="[[ui.videoDialog.opened]]"
-      video-title="[[ui.videoDialog.title]]"
-      youtube-id="[[ui.videoDialog.youtubeId]]"
-      entry-animation="scale-up-animation"
-      exit-animation="fade-out-animation"
-      disable-controls="[[!ui.videoDialog.disableControls]]"
-      fit fixed-top
-    ></video-dialog>
-
-
     <speaker-details
       opened="[[dialogs.speaker.isOpened]]"
       speaker="[[dialogs.speaker.data]]"
       with-backdrop="[[viewport.isTabletPlus]]"
       no-cancel-on-outside-click="[[viewport.isPhone]]"
     ></speaker-details>
-
-    <previous-speaker-details
-      opened="[[dialogs.previousSpeaker.isOpened]]"
-      speaker="[[dialogs.previousSpeaker.data]]"
-      with-backdrop="[[viewport.isTabletPlus]]"
-      no-cancel-on-outside-click="[[viewport.isPhone]]"
-    ></previous-speaker-details>
-
     <session-details
       opened="[[dialogs.session.isOpened]]"
       session="[[dialogs.session.data]]"
