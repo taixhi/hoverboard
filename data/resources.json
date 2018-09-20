@@ -11,7 +11,7 @@
   "emailUs": "Email us",
   "partnershipResources": "Partnership Resources",
   "eventResources": "Event Resources",
-  "buyTicket": "Buy ticket",
+  "buyTicket": "Free Sign Up",
   "signIn": "Sign in",
   "signOut": "Sign out",
   "viewHighlights": "View Highlights",
@@ -36,13 +36,13 @@
       "title": "About",
       "links": [
         {
-          "name": "GDG Lviv",
-          "url": "http://lviv.gdg.org.ua/",
-          "newTab": true
+          "name": "IdeasHub",
+          "url": "https://ideashub.sg",
+	  "newTab": true
         },
         {
-          "name": "Google Developers Group",
-          "url": "https://developers.google.com/",
+          "name": "Questo AI",
+          "url": "https://questo.ai/",
           "newTab": true
         },
         {
@@ -86,10 +86,11 @@
   "subscribeNote": "No spam, only the latest news and updates!",
   "codeOfConduct": "Code of Conduct",
   "aboutBlock": {
-    "title": "What you need to know, before you ask.",
+    "title": "The Future is Yours to Create",
     "callToAction": {
       "featuredSessions": {
-        "description": "ideaHacks brings together the world class experts in Artificial Intelligence, Web and App development technologies for 2 days of sessions, workshops and showcases.",
+        "title": "About",
+        "description": "ideaHacks brings togather the very best mentors, investors, students and cofounders from across south east asia. Don't worry even if you're a beginenr, we offer extensive sessions for beginners to get you started quickly!",
         "label": "Explore featured session",
         "link": "https://www.youtube.com/playlist?list=PLt8lEzcLNl31AouwDkbLbLARlQFwNS2en"
       },
@@ -97,24 +98,44 @@
         "description": "Our 2017 event was a huge success with many projects continuing afterwards with support from the wide Singaporean network of startup founders.",
         "label": "See how it was in 2017",
         "youtubeId": "TdpbgRgz6eE"
+      },
+      "education": {
+        "title": "Future of Education",
+        "description": "Technology is sweeping through classrooms and educators. With the introduction of the new learning technology that will be available, the traditional methods of education will become obsolete."
+      },
+      "nature": {
+        "title": "Future of Sustainability",
+        "description": "The need for sustainability and protecting the environment is a topic that very regularly debated and discussed."
+      },
+      "transport": {
+        "title": "Future of Transport",
+        "description": "When we think of the future of transport we often think of flying cars or jetpacks. However Singapore is already advanced because of its intricate network of MRT lines and bus networks."
+      },
+      "health": {
+        "title": "Future of Health",
+        "description": "One of the UN’s sustainable development goals is zero hunger. The aim is to achieve this goal by by 2030 and technology may be a huge part of that."
       }
     },
     "statisticsBlock": {
       "attendees": {
-        "label": "Prizes",
+        "label": "Theme",
+        "number": "THE FUTURE"
+      },
+      "attendees": {
+        "label": "Worth of prizes to be given away",
         "number": "$10,000"
       },
       "days": {
-        "label": "Days",
+        "label": "Days of hacking and hustling",
         "number": "3"
       },
       "sessions": {
-        "label": "Sessions",
+        "label": "Sessions on Technology and Enterpreneurship",
         "number": "18"
       },
       "tracks": {
-        "label": "Tracks",
-        "number": "4"
+        "label": "Participants",
+        "number": "100+"
       }
     }
   },
@@ -142,10 +163,10 @@
     "previousYear": "Year"
   },
   "speakersBlock": {
-    "title": "Rockstar speakers",
+    "title": "Rockstar mentors",
     "callToAction": {
-      "label": "View all speakers",
-      "link": "/speakers/"
+      "label": "View all mentors",
+      "link": "/mentors/"
     }
   },
   "previousSpeakersBlock": {
@@ -168,14 +189,14 @@
   },
   "subscribeBlock": {
     "callToAction": {
-      "description": "Get notified about the important conference updates",
+      "description": "Get notified about the important updates on ideaHacks",
       "label": "Subscribe"
     },
     "yourEmail": "Your email",
     "emailAddress": "Email Address",
     "firstName": "First Name",
     "lastName": "Last Name",
-    "formTitle": "Get the latest updates, insights and news about GDG DevFest Ukraine sent to your inbox.",
+    "formTitle": "Get the latest updates, insights and news about Ideahacks sent to your inbox.",
     "emailRequired": "Please enter a valid email address.",
     "subscribe": "Subscribe",
     "subscribed": "Subscribed",
@@ -184,7 +205,7 @@
     "toast": "Successfully subscribed!"
   },
   "team": {
-    "description": "Google is known all around the world. Everyone is 'googling', checking on 'maps' and communicating in 'gmail'. For simple users, they are services that just works, but not for us. Developers see much more: APIs, scalability issues, complex technology stacks. And that is what GDG is about.<br><br> [Google Developers Group (GDG) Lviv](http://lviv.gdg.org.ua/) - is open and volunteer geek community who create exciting projects and share experience about Google technologies with a passion.<br><br> Our goal is to organize space to connect the best industry experts with Ukrainian audience to boost development of IT."
+    "description": "IdeaHacks is organised by a group of students who are all incrediblly passionate about innovation and the future."	  
   },
   "schedule": {
     "saveSessionsSignedOut": "Sign in to save sessions"
