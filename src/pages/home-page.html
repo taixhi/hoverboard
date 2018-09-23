@@ -20,10 +20,20 @@
     <style is="custom-style" include="shared-styles flex flex-alignment"></style>
 
     <style>
-
       :host {
         display: block;
         height: 100%;
+      }
+      .info-description {
+        font-weight: bold;
+        font-size: 2em;
+        line-height: 1.2em;
+      }
+      .info-header {
+        font-size: 0.7em;
+      }
+      .mobile-sentence {
+        display: none;
       }
 
       hero-block {
@@ -37,8 +47,9 @@
       }
 
       .info-items {
-        margin: 24px auto;
+        margin: 24px 0;
         font-size: 22px;
+        text-align: left;
       }
 
       .info-items > *:not(:first-of-type) {
@@ -83,6 +94,82 @@
         fill: currentColor;
         animation: updown 2s infinite;
       }
+      @media only screen and (max-width: 768px) {
+          .mobile-sentence{
+            display: inherit !important;
+          }
+          .sentence{
+            display: none;
+          }
+      }
+
+      /*Vertical Sliding*/
+      .slidingVertical{
+        display: inline;
+        text-indent: 8px;
+      }
+      .slidingVertical span{
+        animation: topToBottom 12.5s linear infinite 0s;
+        -ms-animation: topToBottom 12.5s linear infinite 0s;
+        -webkit-animation: topToBottom 12.5s linear infinite 0s;
+        color: #00abe9;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+      }
+      .slidingVertical span:nth-child(2){
+        animation-delay: 2.5s;
+        -ms-animation-delay: 2.5s;
+        -webkit-animation-delay: 2.5s;
+      }
+      .slidingVertical span:nth-child(3){
+        animation-delay: 5s;
+        -ms-animation-delay: 5s;
+        -webkit-animation-delay: 5s;
+      }
+      .slidingVertical span:nth-child(4){
+        animation-delay: 7.5s;
+        -ms-animation-delay: 7.5s;
+        -webkit-animation-delay: 7.5s;
+      }
+      .slidingVertical span:nth-child(5){
+        animation-delay: 10s;
+        -ms-animation-delay: 10s;
+        -webkit-animation-delay: 10s;
+      }
+      /*topToBottom Animation*/
+      @-moz-keyframes topToBottom{
+        0% { opacity: 0; }
+        5% { opacity: 0; -moz-transform: translateY(-50px); }
+        10% { opacity: 1; -moz-transform: translateY(0px); }
+        25% { opacity: 1; -moz-transform: translateY(0px); }
+        30% { opacity: 0; -moz-transform: translateY(50px); }
+        80% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      @-webkit-keyframes topToBottom{
+        0% { opacity: 0; }
+        5% { opacity: 0; -webkit-transform: translateY(-50px); }
+        10% { opacity: 1; -webkit-transform: translateY(0px); }
+        25% { opacity: 1; -webkit-transform: translateY(0px); }
+        30% { opacity: 0; -webkit-transform: translateY(50px); }
+        80% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      @-ms-keyframes topToBottom{
+        0% { opacity: 0; }
+        5% { opacity: 0; -ms-transform: translateY(-50px); }
+        10% { opacity: 1; -ms-transform: translateY(0px); }
+        25% { opacity: 1; -ms-transform: translateY(0px); }
+        30% { opacity: 0; -ms-transform: translateY(50px); }
+        80% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      /*Sentence*/
+      .sentence{
+           font-size: 30px;
+           text-align: left;
+      }
 
       @keyframes updown {
         0% {
@@ -104,6 +191,13 @@
 
         .home-content {
           margin-top: -48px;
+          display: grid;
+          grid-gap: 32px;
+          grid-template-columns: 1fr;
+          text-transform: uppercase;
+          will-change: transform;
+          max-width: 640px;
+          align-items: flex-start !important;
         }
 
         .scroll-down {
@@ -125,7 +219,7 @@
         }
 
         .info-items {
-          margin: 48px auto;
+          margin: 48px 0;
           font-size: 28px;
           line-height: 1.1;
         }
@@ -143,46 +237,45 @@
       hide-logo
     >
       <div class="home-content" layout vertical center>
-        <plastic-image class="hero-logo" srcset="/images/logo.svg" alt="{$ title $}"></plastic-image>
         <div class="info-items highlight-font">
-          <div class="info-item">{$ location.city $}. {$ dates $}</div>
-          <div class="info-item">{$ heroSettings.home.description $}</div>
+          <div class="info-item info-header">{$ homeidea $}. {$ dates $}</div>
+          <div class="info-item info-description">{$ heroSettings.home.description $}</div>
+          <div class="info-item info-sub">
+            <h2 class="sentence">Create the future of 
+              <div class="slidingVertical">
+                <span>Education.</span>
+                <span>Transportation.</span>
+                <span>Health.</span>
+                <span>Sustainability.</span>
+                <span>Society.</span>
+              </div>
+            </h2>
+            <h2 class="sentence mobile-sentence">
+              Create the future.
+            </h2>
+          </div> 
         </div>
 
 
         <div class="action-buttons" layout horizontal center-justified wrap>
-          <paper-button
-            class="watch-video"
-            on-tap="_playVideo"
-            ga-on="click"
-            ga-event-category="video"
-            ga-event-action="watch"
-            ga-event-label="hero block - view highlights"
-          >
-            <iron-icon icon="hoverboard:movie"></iron-icon>
-            {$ viewHighlights $}
-          </paper-button>
-          <paper-button
-            on-tap="_scrollToTickets"
-            ga-on="click"
-            ga-event-category="tickets"
-            ga-event-action="scroll"
-            ga-event-label="hero block - scroll to tickets"
-            primary invert
-          >
+          <a href="https://www.eventbrite.com/e/idea-hacks-2018-tickets-49840578512#tickets" target="_blank" rel="noopener noreferrer" ga-on="click"
+             ga-event-category="ticket button" ga-event-action="buy_click">
+          <paper-button primary invert >
             <iron-icon icon="hoverboard:ticket"></iron-icon>
             {$ buyTicket $}
           </paper-button>
+        </a>
         </div>
 
-        <div class="scroll-down" on-tap="_scrollNextBlock">
+        
+      </div>
+      <div class="scroll-down" on-tap="_scrollNextBlock">
           <svg xmlns="http://www.w3.org/2000/svg"  version="1.1" id="Layer_2" x="0px" y="0px" viewBox="0 0 25.166666 37.8704414" enable-background="new 0 0 25.166666 37.8704414" xml:space="preserve">
         <path class="stroke" fill="none" stroke="#c7c4b8" stroke-width="2.5" stroke-miterlimit="10" d="M12.5833445 36.6204414h-0.0000229C6.3499947 36.6204414 1.25 31.5204487 1.25 25.2871208V12.5833216C1.25 6.3499947 6.3499951 1.25 12.5833216 1.25h0.0000229c6.2333269 0 11.3333216 5.0999947 11.3333216 11.3333216v12.7037992C23.916666 31.5204487 18.8166714 36.6204414 12.5833445 36.6204414z"></path>
         <path class="scroller" fill="#c7c4b8" d="M13.0833359 19.2157116h-0.9192753c-1.0999985 0-1.9999971-0.8999996-1.9999971-1.9999981v-5.428606c0-1.0999994 0.8999987-1.9999981 1.9999971-1.9999981h0.9192753c1.0999985 0 1.9999981 0.8999987 1.9999981 1.9999981v5.428606C15.083334 18.315712 14.1833344 19.2157116 13.0833359 19.2157116z"></path>
     </svg>
           <i class="icon icon-arrow-down"></i>
         </div>
-      </div>
     </hero-block>
     <about-block></about-block>
     <speakers-block></speakers-block>
@@ -197,7 +290,6 @@
   </template>
 
   <script>
-
     // eslint-disable-next-line no-undef
     class HomePage extends ScrollFunctions(ReduxMixin(Polymer.Element)) {
       static get is() {

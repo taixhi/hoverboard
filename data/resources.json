@@ -3,15 +3,16 @@
   "description": "Annual hackathon for students by students!",
   "image": "images/social-share.jpg",
   "keywords": "hackathon, future, ideashub, ideahacks, students, hacker",
-  "dates": "November 2-4, 2018",
-  "partnershipProposition": "https://bit.ly/dfua17-partners",
+  "homeidea": "ideaHacks 2018",
+  "dates": "November 2-4",
+  "partnershipProposition": "mailto:team@questo.ai",
   "share": "Share",
   "followOur": "Follow our",
   "followUs": "Follow us",
   "emailUs": "Email us",
   "partnershipResources": "Partnership Resources",
   "eventResources": "Event Resources",
-  "buyTicket": "Free Sign Up",
+  "buyTicket": "Get a Ticket (Free)",
   "signIn": "Sign in",
   "signOut": "Sign out",
   "viewHighlights": "View Highlights",
@@ -90,14 +91,7 @@
     "callToAction": {
       "featuredSessions": {
         "title": "About",
-        "description": "ideaHacks brings togather the very best mentors, investors, students and cofounders from across south east asia. Don't worry even if you're a beginenr, we offer extensive sessions for beginners to get you started quickly!",
-        "label": "Explore featured session",
-        "link": "https://www.youtube.com/playlist?list=PLt8lEzcLNl31AouwDkbLbLARlQFwNS2en"
-      },
-      "howItWas": {
-        "description": "Our 2017 event was a huge success with many projects continuing afterwards with support from the wide Singaporean network of startup founders.",
-        "label": "See how it was in 2017",
-        "youtubeId": "TdpbgRgz6eE"
+        "description": "Idea Hacks began as a small community project two years ago by a group of high school students who were frustrated that hackathons were out of reach for anyone under 18 years old. Intending to organise an event for all the tech-minded students in Singapore, little did he know almost 200 people would sign up! Over the next two years, more than 400 people would come together from schools all over Singapore to compete."
       },
       "education": {
         "title": "Future of Education",
@@ -118,12 +112,8 @@
     },
     "statisticsBlock": {
       "attendees": {
-        "label": "Theme",
-        "number": "THE FUTURE"
-      },
-      "attendees": {
         "label": "Worth of prizes to be given away",
-        "number": "$10,000"
+        "number": "$3,000"
       },
       "days": {
         "label": "Days of hacking and hustling",
@@ -169,13 +159,6 @@
       "link": "/mentors/"
     }
   },
-  "previousSpeakersBlock": {
-    "title": "Previous speakers",
-    "callToAction": {
-      "label": "View all",
-      "link": "/previous-speakers/"
-    }
-  },
   "galleryBlock": {
     "title": "#dfua16 highlights",
     "description": "This year's festival built lots of excitement. Check out photos from featured talks, hands-on learning sessions, and after-hours fun.",
@@ -205,7 +188,7 @@
     "toast": "Successfully subscribed!"
   },
   "team": {
-    "description": "IdeaHacks is organised by a group of students who are all incrediblly passionate about innovation and the future."	  
+    "description": "Our organizing team is made up of seven high-school students that are passionate about promoting visionary entrepreneurship among the youth."	  
   },
   "schedule": {
     "saveSessionsSignedOut": "Sign in to save sessions"
@@ -214,7 +197,7 @@
     "contentLevel": "Content level",
     "viewPresentation": "View presentation",
     "viewVideo": "View video",
-    "speakers": "Speakers"
+    "speakers": "Mentors"
   },
   "speakerDetails": {
     "sessions": "Sessions"
@@ -234,7 +217,7 @@
     }
   },
   "aboutOrganizerBlock": {
-    "image": "https://media.licdn.com/dms/image/C511BAQGOwZzxEsr2CA/company-background_10000/0?e=1535817600&v=beta&t=jRh5I9SWc8JWnkS2DqrjsVzzAJ83qc0V5vXwgwPRSGw",
+    "image": "https://i.imgur.com/Fc34SVv.jpg",
     "blocks": [
       {
         "title": "Organizer",

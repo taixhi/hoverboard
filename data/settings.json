@@ -24,9 +24,9 @@
       "label": "Home"
     },
     {
-      "route": "speakers",
-      "permalink": "/speakers/",
-      "label": "Speakers"
+      "route": "mentors",
+      "permalink": "/mentors/",
+      "label": "Mentors"
     },
     {
       "route": "schedule",
@@ -41,7 +41,7 @@
   ],
   "heroSettings": {
     "home": {
-      "description": "Create new possibilities for the future",
+      "description": "More than a hackathon.",
       "background": {
         "color": "#673ab7",
         "image": "/images/backgrounds/home.jpg"
@@ -49,9 +49,9 @@
       "fontColor": "#FFF"
     },
     "speakers": {
-      "title": "Speakers",
-      "metaDescription": "Hear from the Googlers, Partners, and Guest Speakers who are building the future of cloud. Check back often as we add more speakers, including our customers and partners.",
-      "description": "Hear from the Googlers, Partners, and Guest Speakers who are building the future of cloud. Check back often as we add more speakers, including our customers and partners.",
+      "title": "Mentors",
+      "metaDescription": "ideaHacks will feature many industry leaders from a wide range of fields in AI, Finance, Engineering, and more!",
+      "description": "ideaHacks will feature many industry leaders from a wide range of fields in AI, Finance, Engineering, and more! New mentors are being added every day. Check back soon!",
       "background": {
         "color": "#FFF"
       },

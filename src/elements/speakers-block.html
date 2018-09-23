@@ -190,7 +190,7 @@
                 <h3 class="name">[[speaker.name]]</h3>
               </text-truncate>
               <text-truncate lines="1">
-                <div class="origin">[[speaker.country]]</div>
+                <div class="origin">[[speaker.title]]</div>
               </text-truncate>
             </div>
 
@@ -231,8 +231,8 @@
       }
 
       _openSpeaker(e) {
-        window.history.pushState({}, null, '/speakers/');
-        window.history.pushState({}, null, `/speakers/${e.model.speaker.id}/`);
+        window.history.pushState({}, null, '/mentors/');
+        window.history.pushState({}, null, `/mentors/${e.model.speaker.id}/`);
         window.dispatchEvent(new CustomEvent('location-changed'));
       }
 

@@ -125,17 +125,8 @@
       active="[[active]]"
     >
       <div class="hero-title highlight-font">{$ heroSettings.team.title $}</div>
-      <p class="hero-description">{$ heroSettings.team.description $}</p>
+      <p class="hero-description">{$ team.description $}</p>
     </hero-block>
-
-    <div class="description-wrapper">
-      <div class="container" layout horizontal justified>
-        <marked-element class="description" markdown="{$ team.description $}">
-          <div slot="markdown-html"></div>
-        </marked-element>
-      </div>
-    </div>
-
     <div class="container">
       <template is="dom-repeat" items="[[team]]" as="team">
         <div class="team-title">[[team.title]]</div>
