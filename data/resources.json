@@ -42,13 +42,8 @@
 	  "newTab": true
         },
         {
-          "name": "Questo AI",
-          "url": "https://questo.ai/",
-          "newTab": true
-        },
-        {
           "name": "Meet the Team",
-          "url": "https://questo.ai/team/",
+          "url": "https://questo.ai/about/",
           "newTab": true
         }
       ]
