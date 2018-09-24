@@ -1,0 +1,213 @@
+[debug] [2018-09-24T02:07:38.325Z] ----------------------------------------------------------------------
+[debug] [2018-09-24T02:07:38.329Z] Command:       /usr/local/Cellar/node/10.8.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-09-24T02:07:38.329Z] CLI Version:   4.2.1
+[debug] [2018-09-24T02:07:38.329Z] Platform:      darwin
+[debug] [2018-09-24T02:07:38.329Z] Node Version:  v8.11.4
+[debug] [2018-09-24T02:07:38.330Z] Time:          Mon Sep 24 2018 10:07:38 GMT+0800 (+08)
+[debug] [2018-09-24T02:07:38.330Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-09-24T02:07:38.350Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-09-24T02:07:38.350Z] > authorizing via signed-in user
+[debug] [2018-09-24T02:07:38.353Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-09-24T02:07:38.353Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+
+[debug] [2018-09-24T02:07:38.576Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:07:38.607Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/ideahacks-c7212  
+ 
+[debug] [2018-09-24T02:07:39.594Z] <<< HTTP RESPONSE 200
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions.
+ Please upgrade using npm install --save firebase-functions@latest in your functions directory.
+[info] 
+[info] === Deploying to 'ideahacks-c7212'...
+[info] 
+[info] i  deploying database, firestore, functions, hosting
+[info] Running command: npm run predeploy
+[info] Running command: npm --prefix ./functions run build
+[info] ✔  functions: Finished running predeploy script.
+[info] i  database: checking rules syntax...
+[debug] [2018-09-24T02:07:54.928Z] >>> HTTP REQUEST PUT https://ideahacks-c7212.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+
+[debug] [2018-09-24T02:07:56.567Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules syntax for database ideahacks-c7212 is valid
+[info] i  firestore: checking firestore.rules for compilation errors...
+[debug] [2018-09-24T02:07:56.576Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/ideahacks-c7212:test  
+
+[debug] [2018-09-24T02:07:59.076Z] <<< HTTP RESPONSE 200
+[info] ✔  firestore: rules file firestore.rules compiled successfully
+[debug] [2018-09-24T02:07:59.079Z] > [functions] package.json contents: {
+  "name": "hoverboard-functions",
+  "description": "Hoverboard serverless functions",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "babel src --out-dir dist --source-maps",
+    "postbuild": "cpx ../build/index.html dist/"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^1.6.0",
+    "child-process-promise": "^2.2.1",
+    "cpx": "^1.5.0",
+    "express": "^4.16.3",
+    "firebase-admin": "^5.12.0",
+    "firebase-functions": "^1.0.1",
+    "md5": "^2.2.1",
+    "mkdirp-promise": "^5.0.1",
+    "moment": "^2.22.0",
+    "node-fetch": "^2.1.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.54",
+    "@babel/core": "^7.0.0-beta.54",
+    "@babel/preset-env": "^7.0.0-beta.54",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.54",
+    "rimraf": "^2.6.2"
+  }
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2018-09-24T02:07:59.081Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/ideahacks-c7212?view=CONSUMER_VIEW  
+ 
+[debug] [2018-09-24T02:07:59.082Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/ideahacks-c7212?view=CONSUMER_VIEW  
+ 
+[debug] [2018-09-24T02:08:01.417Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:01.446Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2018-09-24T02:08:01.448Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/ideahacks-c7212  
+ 
+[debug] [2018-09-24T02:08:04.349Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:04.349Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1054749928993:getServerAppConfig  
+ 
+[debug] [2018-09-24T02:08:07.258Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:07.261Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/ideahacks-c7212/versions  
+
+[debug] [2018-09-24T02:08:11.674Z] <<< HTTP RESPONSE 200
+[info] i  firestore: uploading rules firestore.rules...
+[debug] [2018-09-24T02:08:11.677Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/ideahacks-c7212/rulesets  
+
+[debug] [2018-09-24T02:08:11.677Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1beta1/projects/ideahacks-c7212/databases/(default)/indexes  
+ 
+[debug] [2018-09-24T02:08:13.095Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:17.670Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:17.671Z] [rules] created ruleset projects/ideahacks-c7212/rulesets/3c40a81c-e56b-45bb-91cf-26d42ef69931
+[info] i  functions: preparing functions directory for uploading...
+[info] i  functions: packaged functions (135.22 KB) for uploading
+[debug] [2018-09-24T02:08:20.034Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/ideahacks-c7212/locations/us-central1/functions:generateUploadUrl  
+ 
+[debug] [2018-09-24T02:08:20.560Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:20.561Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-efbb48c3-7107-435f-b23e-9775ab35e75f/db90f9d0-c40b-44a8-8e6f-7b5d3e6aadb7.zip?GoogleAccessId=service-1054749928993@gcf-admin-robot.iam.gserviceaccount.com&Expires=1537756698&Signature=Whfxo4KroUYSMUu1aguoLAfSwOK%2FodHMQr2FTepHF5Bwvtwmn1hj4YN6eTIP5ouaOiYlAN7MOBNqHNZRx1g%2BzDr1VSMPcTVRAwPYuMkd1Bdnx7rvUUJHFI7lCy6BQi5Fdm2M8VTCd40iv8hXEzDf0Rev0AI9H29idSSX7juQ%2BNVYQxp3Bw3qZ8ON5%2Bqt%2Fit8RzZLatEHowponAIJOaLVNW5GHvdXTxjaOobS%2B24o%2BZusq%2BuIgCnUzcymUICB8N5OB4TGCCj6EeizXgPFIhRCno5EIhEmraaSTdkFc%2Fkea9yuMhQH0P%2BEF%2BMv3XAJoC%2FT7952zfIg8gpPZUoX7gdwRQ%3D%3D  
+
+[debug] [2018-09-24T02:08:22.382Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: functions folder uploaded successfully
+[info] i  hosting[ideahacks-c7212]: beginning deploy...
+[info] i  hosting[ideahacks-c7212]: found 70 files in ./build
+[debug] [2018-09-24T02:08:22.994Z] [hosting] hash cache [YnVpbGQ] stored for 70 files
+[debug] [2018-09-24T02:08:22.995Z] [hosting][hash queue][FINAL]
+[debug] [2018-09-24T02:08:22.995Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/ideahacks-c7212/versions/ff5eeeb809562ed9:populateFiles  
+ <request body omitted>
+[debug] [2018-09-24T02:08:25.130Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:25.138Z] [hosting][populate queue][FINAL]
+[debug] [2018-09-24T02:08:25.138Z] [hosting] uploads queued: 10
+[debug] [2018-09-24T02:08:28.841Z] [hosting][upload queue][FINAL]
+[info] ✔  hosting[ideahacks-c7212]: file upload complete
+[debug] [2018-09-24T02:08:28.842Z] [hosting] deploy completed after 6457ms
+[info] i  database: releasing rules...
+[debug] [2018-09-24T02:08:28.846Z] >>> HTTP REQUEST PUT https://ideahacks-c7212.firebaseio.com/.settings/rules.json  
+ {
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+
+[debug] [2018-09-24T02:08:29.569Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules for database ideahacks-c7212 released successfully
+[debug] [2018-09-24T02:08:29.571Z] [rules] releasing cloud.firestore with ruleset projects/ideahacks-c7212/rulesets/3c40a81c-e56b-45bb-91cf-26d42ef69931
+[debug] [2018-09-24T02:08:29.571Z] >>> HTTP REQUEST PATCH https://firebaserules.googleapis.com/v1/projects/ideahacks-c7212/releases/cloud.firestore  
+
+[debug] [2018-09-24T02:08:30.983Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:30.983Z] [rules] updated release projects/ideahacks-c7212/releases/cloud.firestore
+[info] ✔  firestore: released rules firestore.rules to cloud.firestore
+[debug] [2018-09-24T02:08:30.988Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/projects/ideahacks-c7212/locations/-/functions  
+ 
+[debug] [2018-09-24T02:08:31.985Z] <<< HTTP RESPONSE 200
+[info] i  functions: updating Node.js 6 function saveUserData(us-central1)...
+[debug] [2018-09-24T02:08:31.991Z] Trigger is:  {"eventTrigger":{"resource":"projects/ideahacks-c7212","eventType":"providers/firebase.auth/eventTypes/user.create","service":"firebaseauth.googleapis.com"}}
+[info] i  functions: updating Node.js 6 function sendGeneralNotification(us-central1)...
+[debug] [2018-09-24T02:08:31.992Z] Trigger is:  {"eventTrigger":{"resource":"projects/ideahacks-c7212/databases/(default)/documents/notifications/{timestamp}","eventType":"providers/cloud.firestore/eventTypes/document.create","service":"firestore.googleapis.com"}}
+[info] i  functions: updating Node.js 6 function scheduleNotifications(us-central1)...
+[debug] [2018-09-24T02:08:31.993Z] Trigger is:  {"eventTrigger":{"resource":"projects/ideahacks-c7212/topics/schedule-tick","eventType":"google.pubsub.topic.publish","service":"pubsub.googleapis.com"}}
+[info] i  functions: updating Node.js 6 function optimizeImages(us-central1)...
+[debug] [2018-09-24T02:08:31.994Z] Trigger is:  {"eventTrigger":{"resource":"projects/_/buckets/ideahacks-c7212.appspot.com","eventType":"google.storage.object.finalize","service":"storage.googleapis.com"}}
+[info] i  functions: updating Node.js 6 function mailchimpSubscribe(us-central1)...
+[debug] [2018-09-24T02:08:31.994Z] Trigger is:  {"eventTrigger":{"resource":"projects/ideahacks-c7212/databases/(default)/documents/subscribers/{id}","eventType":"providers/cloud.firestore/eventTypes/document.create","service":"firestore.googleapis.com"}}
+[info] i  functions: updating Node.js 6 function prerender(us-central1)...
+[debug] [2018-09-24T02:08:31.996Z] Trigger is:  {"httpsTrigger":{}}
+[debug] [2018-09-24T02:08:32.000Z] >>> HTTP REQUEST PATCH https://cloudfunctions.googleapis.com/v1/projects/ideahacks-c7212/locations/us-central1/functions/saveUserData 
+query params: {"updateMask":"sourceUploadUrl,name,labels,eventTrigger.resource,eventTrigger.eventType,eventTrigger.service"} 
+
+[debug] [2018-09-24T02:08:32.002Z] >>> HTTP REQUEST PATCH https://cloudfunctions.googleapis.com/v1/projects/ideahacks-c7212/locations/us-central1/functions/sendGeneralNotification 
+query params: {"updateMask":"sourceUploadUrl,name,labels,eventTrigger.resource,eventTrigger.eventType,eventTrigger.service"} 
+
+[debug] [2018-09-24T02:08:32.003Z] >>> HTTP REQUEST PATCH https://cloudfunctions.googleapis.com/v1/projects/ideahacks-c7212/locations/us-central1/functions/scheduleNotifications 
+query params: {"updateMask":"sourceUploadUrl,name,labels,eventTrigger.resource,eventTrigger.eventType,eventTrigger.service"} 
+
+[debug] [2018-09-24T02:08:32.005Z] >>> HTTP REQUEST PATCH https://cloudfunctions.googleapis.com/v1/projects/ideahacks-c7212/locations/us-central1/functions/optimizeImages 
+query params: {"updateMask":"sourceUploadUrl,name,labels,eventTrigger.resource,eventTrigger.eventType,eventTrigger.service"} 
+
+[debug] [2018-09-24T02:08:32.005Z] >>> HTTP REQUEST PATCH https://cloudfunctions.googleapis.com/v1/projects/ideahacks-c7212/locations/us-central1/functions/mailchimpSubscribe 
+query params: {"updateMask":"sourceUploadUrl,name,labels,eventTrigger.resource,eventTrigger.eventType,eventTrigger.service"} 
+
+[debug] [2018-09-24T02:08:32.006Z] >>> HTTP REQUEST PATCH https://cloudfunctions.googleapis.com/v1/projects/ideahacks-c7212/locations/us-central1/functions/prerender 
+query params: {"updateMask":"sourceUploadUrl,name,labels,httpsTrigger"} 
+
+[debug] [2018-09-24T02:08:33.145Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:33.149Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:33.155Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:33.267Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:33.273Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:33.491Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:33.493Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/projects/ideahacks-c7212/locations/-/functions  
+ 
+[debug] [2018-09-24T02:08:34.322Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:34.324Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/aWRlYWhhY2tzLWM3MjEyL3VzLWNlbnRyYWwxL3NhdmVVc2VyRGF0YS9mazRVeGV4RWVjQQ  
+ 
+[debug] [2018-09-24T02:08:34.325Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/aWRlYWhhY2tzLWM3MjEyL3VzLWNlbnRyYWwxL3NlbmRHZW5lcmFsTm90aWZpY2F0aW9uL2NPUVh2ajQxa2JJ  
+ 
+[debug] [2018-09-24T02:08:34.326Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/aWRlYWhhY2tzLWM3MjEyL3VzLWNlbnRyYWwxL3NjaGVkdWxlTm90aWZpY2F0aW9ucy8xYk9vTlEzclZmWQ  
+ 
+[debug] [2018-09-24T02:08:34.327Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/aWRlYWhhY2tzLWM3MjEyL3VzLWNlbnRyYWwxL29wdGltaXplSW1hZ2VzLzA2RkhoejlNWnpZ  
+ 
+[debug] [2018-09-24T02:08:34.328Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/aWRlYWhhY2tzLWM3MjEyL3VzLWNlbnRyYWwxL21haWxjaGltcFN1YnNjcmliZS9aUU5vSU5NU2RhVQ  
+ 
+[debug] [2018-09-24T02:08:34.328Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/aWRlYWhhY2tzLWM3MjEyL3VzLWNlbnRyYWwxL3ByZXJlbmRlci9BOC1JbWVXN01mUQ  
+ 
+[debug] [2018-09-24T02:08:35.203Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:35.204Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:35.207Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:35.207Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:35.207Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:35.208Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:37.209Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/aWRlYWhhY2tzLWM3MjEyL3VzLWNlbnRyYWwxL29wdGltaXplSW1hZ2VzLzA2RkhoejlNWnpZ  
+ 
+[debug] [2018-09-24T02:08:37.210Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/aWRlYWhhY2tzLWM3MjEyL3VzLWNlbnRyYWwxL3NjaGVkdWxlTm90aWZpY2F0aW9ucy8xYk9vTlEzclZmWQ  
+ 
+[debug] [2018-09-24T02:08:37.210Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/aWRlYWhhY2tzLWM3MjEyL3VzLWNlbnRyYWwxL3NhdmVVc2VyRGF0YS9mazRVeGV4RWVjQQ  
+ 
+[debug] [2018-09-24T02:08:37.210Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/aWRlYWhhY2tzLWM3MjEyL3VzLWNlbnRyYWwxL3NlbmRHZW5lcmFsTm90aWZpY2F0aW9uL2NPUVh2ajQxa2JJ  
+ 
+[debug] [2018-09-24T02:08:37.211Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/aWRlYWhhY2tzLWM3MjEyL3VzLWNlbnRyYWwxL21haWxjaGltcFN1YnNjcmliZS9aUU5vSU5NU2RhVQ  
+ 
+[debug] [2018-09-24T02:08:37.212Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/aWRlYWhhY2tzLWM3MjEyL3VzLWNlbnRyYWwxL3ByZXJlbmRlci9BOC1JbWVXN01mUQ  
+ 
+[debug] [2018-09-24T02:08:38.359Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:38.360Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:38.365Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:38.365Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:38.366Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-24T02:08:38.405Z] <<< HTTP RESPONSE 200
