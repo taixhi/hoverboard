@@ -1,9 +1,6 @@
 {
   "organizer": {
-    "name": "IdeasHub 2018",
-    "twitter": "hacks_idea",
-    "blog": "https://medium.com/the-artificial-intelligence-journal/",
-    "url": "http://google.com/"
+    "name": "IDEAS Hub 2018",
   },
   "startDate": "2018-11-02T17:00:00+00:00",
   "endDate": "2018-11-04T17:00:00+00:00",
@@ -131,25 +128,6 @@
       "min": "1024px"
     }
   },
-  "socialNetwork": {
-    "follow": [
-      {
-        "name": "facebook",
-        "url": "https://www.facebook.com/devfest.ukraine/"
-      },
-      {
-        "name": "twitter",
-        "url": "https://twitter.com/devfest_ukraine/"
-      },
-      {
-        "name": "instagram",
-        "url": "https://www.instagram.com/devfestukraine"
-      },
-      {
-        "name": "youtube",
-        "url": "https://www.youtube.com/playlist?list=PLt8lEzcLNl31AouwDkbLbLARlQFwNS2en"
-      }
-    ],
     "share": [
       {
         "name": "gplus",

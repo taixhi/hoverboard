@@ -5,7 +5,7 @@
   "keywords": "hackathon, future, ideashub, ideahacks, students, hacker",
   "homeidea": "ideaHacks 2018",
   "dates": "November 9-11",
-  "partnershipProposition": "mailto:team@questo.ai",
+  "partnershipProposition": "mailto:ideahacks@uwcsea.edu.sg",
   "share": "Share",
   "followOur": "Follow our",
   "followUs": "Follow us",
@@ -43,23 +43,8 @@
         },
         {
           "name": "Meet the Team",
-          "url": "https://questo.ai/about/",
+          "url": "https://ideahacks.sg/team/",
           "newTab": true
-        }
-      ]
-    },
-    {
-      "title": "Explore Past IdeaHacks",
-      "links": [
-        {
-          "name": "IdeaHacks 2016",
-          "url": "#",
-          "newTab": false
-        },
-        {
-          "name": "IdeaHacks 2017",
-          "url": "#",
-          "newTab": false
         }
       ]
     },
@@ -68,7 +53,7 @@
       "links": [
         {
           "name": "Partnership Proposition",
-          "url": "mailto://team@questo.ai",
+          "url": "mailto:ideahacks@uwcsea.edu.sg",
           "newTab": true
         },
         {
