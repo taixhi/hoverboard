@@ -1,6 +1,10 @@
 {
   "organizer": {
-    "name": "IDEAS Hub 2018",
+    "name": "IDEAS Hub",
+    "twitter": "https://twitter.com/ideashubuwcsea",
+    "facebook": "https://www.facebook.com/ideashubuwcsea/",
+    "instagram": "https://www.instagram.com/ideashubuwcsea/",
+    "url": "http://ideashub.sg/"
   },
   "startDate": "2018-11-02T17:00:00+00:00",
   "endDate": "2018-11-04T17:00:00+00:00",
@@ -128,6 +132,21 @@
       "min": "1024px"
     }
   },
+  "socialNetwork": {
+    "follow": [
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/ideashubuwcsea"
+      },
+      {
+        "name": "twitter",
+        "url": "https://twitter.com/ideashubuwcsea"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/ideashubuwcsea"
+      }
+    ],
     "share": [
       {
         "name": "gplus",
